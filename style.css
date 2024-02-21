@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .MainHeader .HeaderLeft{
     height: 100%;
@@ -57,4 +58,123 @@
     height: 30px;
     margin-left: 15px;
     
+}
+.MegaHeader .MainMenuList .MegaBox{
+    background-color: white;
+    border: 1px solid rgb(167, 167, 167);
+    top: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    max-height: 1px;
+    
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+
+  
+.MegaContent{
+    display: flex;
+    padding: 25px 25px 25px 5px;
+    visibility: hidden;
+    position: relative;
+    top: -20px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.RowHeadFont{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: small;
+    cursor: default;
+}
+.row li a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: smaller;
+    font-style: normal;
+}
+.row li a:hover{
+    font-weight: 600;
+}
+.row li{
+    list-style: none;
+    margin-left: -5px;
+    line-height: 35px;
+}
+.MegaContent .row{
+    width: 200px;
+    margin-left: 20px;
+}
+.MegaContent .imgRow{
+    width: 410px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid lightgray;
+    
+}
+.MegaContent .Featured{
+    width: 100%;
+    height: calc(100% - 35px);
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.Featured .ads{
+    width: 120px;
+    height: 135px;
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.ads h6{
+    background-color: lightseagreen;
+    color: white;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: -70px;
+    margin-top: -110px;
+    z-index: 800;
+}
+.imgRow .Featured .ads img{
+    width: 70%;
+    scale: 1;
+    transition: all 0.3s ease-in-out;
+    z-index: 799;
+}
+.imgRow .Featured .ads:hover img{
+    scale: 1.1;
+}
+.ads p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: smaller;
+    font-style: normal;
+}
+.MegaHeader .MainMenuList:hover .MegaBox{
+    visibility: visible;
+    max-height: 1000px;
+    
+    .MegaContent{
+        visibility: visible;
+        top: 0;
+        opacity: 1;
+    }
+}
+.MainMenuList .Remargin{
+    left: 100px;
+}
+.MRight .Remargin{
+    left: 550px;
 }
