@@ -11,13 +11,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    z-index: 999;
 }
 .MainHeader .HeaderLeft{
     height: 100%;
     display: flex;
     align-items: center;
-    
+    z-index: 999;
 }
 .HeaderLeft img{
     width: 130px;
@@ -53,6 +53,7 @@
     display: flex;
     align-items: center;    
     height: 100%;
+    z-index: 999;
 }
 .IconStyle{
     height: 30px;
@@ -177,4 +178,276 @@
 }
 .MRight .Remargin{
     left: 550px;
+}
+
+.SliderSection{
+    width: 100%;
+    height: 670px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+.SliderContent{
+    max-width: 1400px;
+    width: 100%;
+    height: 670px;
+    
+    position: absolute;
+}
+.SliderContent #LandGraphics{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.SliderSection .SliderTopSection{
+    width: 1400px;
+    height: 250px;
+    z-index: 2;
+    
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#BackArrow{
+    width: 45px;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+#ForwardArrow{
+    width: 45px;
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+     
+}
+.SectionDetails{
+    width: 300px;
+    height: 170px;
+    color: white;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.SectionDetails h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    cursor: default;
+}
+.SectionDetails p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    cursor: default;
+}
+.SectionDetails button{
+    border-radius: 50px;
+    font-size:small;
+    font-weight: bold;
+    border-style: none;
+    padding: 11px 20px ;
+    align-self: flex-start;
+    cursor: pointer;
+}
+.SectionDetails button:hover{
+    background-color: lightgray;
+}
+
+.WeekHighlights{
+    width: 100%;
+    height: 900px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.WeekHighlights h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+.Highlights{
+    width: 100%;
+    height: 840px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Highlights .HighlightMenu{
+    list-style: none;
+    display: inline-flex;
+
+}
+.HighlightMenu li{
+    padding-left: 45px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+.HighlightContent{
+    width: 1390px;
+    height: 684px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.BigHighlight{
+    width: 680px;
+    height: 684px;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+}
+
+.SmallHighlightArea{
+    width: 680px;
+    height: 684px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+}
+.SmallHighlight{
+    width: 330px;
+    height: 330px;
+    border-radius: 25px;
+    margin-right: 23px;
+    overflow: hidden;
+    position: relative;
+}
+.BigHighlight:hover .ZoomImg,
+.SmallHighlight:hover .ZoomImg{
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+.PositionToBack{
+    position: absolute;
+}
+.BigHighlightData{
+    width: 100%;
+    height: 140px;
+
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+}
+.BigHighlight .BigHLText{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+.AnimatedButtonArea{
+    width: 320px;
+    height: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.AnimatedButtonArea .AnimeButtonPara{
+    width: 100%;
+    height: 100%;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+}
+.AnimatedButtonArea .AnimeButtonPara p{
+    position: relative;
+    text-align: center;
+    top: 0;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+.AnimatedButtonArea .AnimeButon{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.AnimatedButtonArea .AnimeButon .AnButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    padding: 10px 20px ;
+    border-radius: 50px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 25px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.AnimatedButtonArea .AnimeButon .AnButton:hover{
+    background-color: gray;
+}
+.HighlightContent .BigHighlight:hover .AnimatedButtonArea{
+    .AnimeButtonPara p{
+        opacity: 0;
+        top: -30px;
+    }
+    .AnimeButon .AnButton{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.SmallHighlightData{
+    width: 100%;
+    height: 100px;
+   
+    position: absolute;
+    bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.SmallHighlight .SmallHLText{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    cursor: default;
+}
+
+.HighlightContent .SmallHighlight:hover .AnimatedButtonArea{
+    .AnimeButtonPara p{
+        opacity: 0;
+        top: -30px;
+    }
+    .AnimeButon .AnButton{
+        top: 0;
+        opacity: 1;
+    }
 }
