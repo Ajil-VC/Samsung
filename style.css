@@ -137,7 +137,7 @@
     box-sizing: border-box;
     padding-top: 10px;
 }
-.ads h6{
+.NewTag{
     background-color: lightseagreen;
     color: white;
     font-size: 11px;
@@ -556,4 +556,96 @@
     overflow: hidden;
     position: relative;
 
+}
+
+.CardSection{
+    width: 1400px;
+    height: 820px;
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.CardSection h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    padding-top: 40px;
+    cursor: default;
+}
+.CardSection .CardDivision{
+    width: 100%;
+    height: 680px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 110px;
+}
+.CardDivision .card{
+    width: 270px;
+    height: 680px;
+    border-radius: 25px;
+    background-color: rgb(233, 233, 233);
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+.CardDivision .CardImageAndName{
+    width: 100%;
+    height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.CardDivision .CardDetails{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+     
+}
+.CardDetails .RadioColorChange input[type="radio"]{
+    scale: 1.6;
+    margin-right: 20px;
+   
+}
+.CardDetails .Memory{
+    display: flex;
+    
+}
+.CardDetails .Memory h5{
+    padding: 5px 10px;
+    border: solid 1px black;
+    border-radius: 50px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.CardDetails span,.CardDetails a{
+    color: rgb(0, 47, 255);
+}
+.CardDetails .FullsizeButton{
+    width: 100%;
+    height: 40px;
+}
+.NewTagForCard{
+    background-color: lightseagreen;
+    color: white;
+    font-size: 11px;
+    padding: 5px 8px;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 0;
+    z-index: 800;
 }
