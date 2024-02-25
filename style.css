@@ -451,3 +451,109 @@
         opacity: 1;
     }
 }
+
+.MobileSection{
+    width: 1400px;
+    height: 800px;
+    
+    margin: auto;
+    margin-top: 40px;
+    overflow: hidden;
+    position: relative;
+
+}
+.GadgetsSectionHeader{
+    width: 100%;
+    height: 150px;
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.GadgetsSectionHeader h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    padding: 5px 0;
+    cursor: default;
+}
+.GadgetsSectionHeader ul{
+    display: inline-flex;
+    margin-left: -40px;
+    padding: 10px 0;
+}
+.GadgetsSectionHeader ul li{
+    list-style: none;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+.GadgetsSectionDetails{
+    width: 1400px;
+    height: 180px;
+    
+    position: absolute;
+    margin-top: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.GadgetsSectionDetails div a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.NormallButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    padding: 10px 20px ;
+    border-radius: 50px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    
+}
+.NormallButton:hover{
+    background-color: gray;
+}
+.GadgetsSectionDetails h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 5px 0;
+    cursor: default;
+}
+.GadgetsSectionDetails p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding: 10px 0;
+}
+.TVSection{
+    width: 1400px;
+    height: 800px;
+   
+    margin: auto;
+   
+    overflow: hidden;
+    position: relative;
+
+}
+.HomeAplianceSection{
+    width: 1400px;
+    height: 800px;
+   
+    margin: auto;
+   
+    overflow: hidden;
+    position: relative;
+
+}
