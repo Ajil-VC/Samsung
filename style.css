@@ -649,3 +649,141 @@
     margin-top: 0;
     z-index: 800;
 }
+
+.ExploreSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+.ExploreSectionContent{
+    display: flex;
+}
+.ExploreSectionContent .ESImage{
+    width:680px;
+    height: 680px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    
+}
+.ExploreSectionContent .ESImage img:hover{
+    transition: all 0.3s ease-in-out;
+    scale: 1.1;
+}
+.ExploreSectionContent .ESList{
+    width: 680px;
+    height: 680px;
+   
+    box-sizing: border-box;
+    padding: 30px 80px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;  
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 80px;
+    cursor: default;
+}
+.ExploreSectionContent .ESList ol li{
+    padding-left: 20px;
+}
+.ExploreSection h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    
+    cursor: default;
+    padding-bottom: 25px;    
+}
+.ESList ol li ul li a{
+    color: black;
+    
+}
+.ESList ol li ul{
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 30px;
+    display: none;
+    list-style: none;
+}
+.ESList ol li h4:hover ~ ul{
+    display:block;
+}
+
+.SearchingSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+.SearchingSection h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    
+    cursor: default;
+    padding-bottom: 25px; 
+}
+.SearchingSection .SearchBar{
+    border-radius: 50px;
+    border-style: none;
+    border: solid 1px black;
+    padding: 15px;
+    width: 400px;
+}
+.SearchingSection div{
+    width: 480px;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.SearchingSection button{
+    padding: 7px 20px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: white;
+    border: solid 1px gray;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.SearchingSection button:hover{
+    background-color: rgb(240, 239, 239);
+}
+.ListSection{
+    box-sizing: border-box;
+    padding: 40px 100px ;
+}
+
+.Footer{
+    box-sizing: border-box;
+    padding: 20px 100px;
+    display: flex;
+    justify-content:space-between;
+   
+}
+.FooterDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 1px gray;
+    padding: 25px 0;
+}
+.Footer ul{
+    display: inline-flex;
+    
+}
+.Footer ul li{
+    list-style: none;
+    padding-right: 20px;
+}
+.Footer li a{
+    text-decoration: none;
+    color: black;
+}
